@@ -1,0 +1,39 @@
+h1{
+    margin:  auto;
+    background: grey;
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+    margin: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color:black;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-475%, 125%);
+    cursor: pointer;
+    transition: transform 0.3s ;
+}
+.container {
+    position: relative;
+}
+.circle.moveLeft {
+    transform: translate(-800%, 125%);
+}
+.circle.moveRight {
+    transform: translate(-150%, 125%);
+}
+.circle.moveCenter {
+    transform: translate(-450%, 125%);
+}
